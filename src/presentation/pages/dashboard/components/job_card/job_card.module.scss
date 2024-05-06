@@ -1,0 +1,74 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.fontGrayColor {
+    color: gray;
+}
+
+.jobCard {
+    width: 390px;
+    height: 545px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    .header {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+
+        img {
+            width: 40px;
+            object-fit: contain;
+            aspect-ratio: 1;
+        }
+
+        span {
+            text-align: left;
+        }
+    }
+
+    .jobDetails {
+        width: 100%;
+
+
+    }
+
+    .actionBtn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+
+        .referralBtn {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            img {
+                filter: blur(2px);
+                -webkit-filter: blur(1px);
+            }
+        }
+    }
+}
+
+.topBottomOverflowFade {
+    height: 45%;
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
